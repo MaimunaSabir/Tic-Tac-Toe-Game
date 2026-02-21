@@ -1,0 +1,168 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #c9ada7;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+h4{
+    color: #4a4e69;
+    font-size:45px;
+    padding: 3px;
+    margin: 5px;
+    /* position: absolute;
+    top: 30px; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.container{
+    height: 60vh;
+    width: 44vw;
+    background-color: #c9ada7 ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.box{
+    height:18vh;
+    width: 12vw;
+    border: none;
+    background-color:#bde0fe;
+    border-radius: 7px;
+    font-size: 2rem;
+    font-weight: 500;
+    box-shadow:10px 5px 5px rgba(0, 0, 0,0.5);
+
+}
+
+
+.btn{
+    background-color: #4a4e69;
+    border: none;
+    border-radius: 6px;
+    height: 9vh;
+    width: 13vw;
+    color: white;
+    margin: 20px;
+    margin-top: 60px;
+    padding: 5px;
+    font-size: 1rem;
+    padding: 6px;
+
+}
+.hideCon{
+    display: none;
+    height: 90vh;
+    padding-bottom: 400px;
+    
+}
+.drawCon{
+    display: none;
+    height: 90vh;
+    padding-bottom: 400px;
+    
+}
+#msg{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+    margin-left: 20px;
+    margin-top: 200px;
+
+}
+#drawmsg{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+    margin-left: 20px;
+    margin-top: 200px;
+
+}
+
+.newbtn{
+    margin-left: 80px;
+    margin-bottom: 400px;
+}
+
+.drawbtn{
+    margin-left: 80px;
+    margin-bottom: 400px;
+}
+
+button{
+    border: 2px solid transparent;
+}
+button:hover{
+    border: 2px solid white;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+
+  
+    
+/*  M/* ========================= */
+/* 📱 Better Mobile Version  */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    body{
+        justify-content: flex-start;
+        padding-top: 20px;
+    }
+
+    h4{
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .container{
+        width: 90vw;
+        height: 90vw;   /* square container */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .box{
+        width: 100%;
+        height: 100%;
+        font-size: 1.8rem;
+    }
+
+    .btn{
+        width: 70vw;
+        height: 45px;
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+
+    .newbtn,
+    .drawbtn{
+        margin: 20px auto;
+    }
+
+    #msg,
+    #drawmsg{
+        font-size: 1rem;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .hideCon,
+    .drawCon{
+        height: auto;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .rebtn{
+        width: 70vw;
+        margin-top: 20px;
+    }
+}
